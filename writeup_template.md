@@ -39,10 +39,12 @@ Then, in order to draw a single line I have modified the draw_lines functions. W
 
 I have chosen this pipeline, because I think it would work better with curved roads than the single line strategy. If required, I can work on another segment reduction, to make a single line. This is quite ready in the project.
 
-One potential shortcoming would be what would happen when there is too many interference in the images, the solution gets a bit lost. I would rather evolve the solution to make more data visible. 
+One potential shortcoming would be what would happen when there is too many interference in the images, the solution gets a bit lost. I would rather evolve the solution to make more data visible.
+
+This sort of decision may impact on different environments, such as clear weather conditions, or even reduced visibility, since, it is one fixed point in the screen.
 
 ###3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to refine the slope parameters to fetch only real lanes, for the additional challenge. 
+A possible improvement would be to refine the slope parameters to fetch only real lanes, for the additional challenge. Also, I would like to work more in the draw_lines function, to make it more complex and covering the lane detection with more precision.
 
 Another potential improvement could be to reduce the amount of segments, to another averages, reducing the impact of the interferences in the region within the polygon.
